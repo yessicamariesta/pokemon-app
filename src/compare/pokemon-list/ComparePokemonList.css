@@ -1,0 +1,121 @@
+.compare-pokemon-list-container {
+  background-color: white;
+  width: 570px;
+  border-radius: 8px;
+}
+
+.compare-pokemon-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 20px;
+}
+
+.compare-pokemon-header > p:first-child {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.compare-pokemon-header > p:nth-child(2) {
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.compare-pokemon-list-body {
+  height: 400px;
+  overflow-y: scroll;
+  position: relative;
+}
+
+.compare-pokemon-list-body.loading {
+  overflow-y: hidden;
+}
+
+.single-compare-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 93%;
+  margin: auto;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding-left: 10px;
+  animation: 0.4s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0s 1 normal none running
+    fade;
+}
+
+.selected {
+  width: 20px;
+  height: 20px;
+}
+
+.pokemonImg {
+  width: 60px;
+}
+
+.compare-right-container,
+.compare-left-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.compare-info-container {
+  text-transform: capitalize;
+  width: 120px;
+  font-weight: 600;
+}
+
+.compare-info-container > p:first-child {
+  font-size: 12px;
+  color: var(--light-grey);
+}
+
+.compare-tools-container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto 20px;
+  gap: 10px;
+}
+
+.top-tools-container {
+  width: 200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-tools-container > button,
+.compare-tools-container > button {
+  background: var(--blue-gradient);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  width: 80px;
+  margin: auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-weight: 600;
+  box-shadow: var(--light-shadow);
+  cursor: pointer;
+}
+
+.compare-tools-container > .choose-btn {
+  background: var(--green-gradient);
+  width: 93%;
+}
+
+@keyframes fade {
+  0% {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}

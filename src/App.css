@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --primary-color: #25282b;
+  --dark-grey: rgb(84, 84, 84);
+  --light-grey: rgb(175, 175, 175);
+  --orange-gradient: linear-gradient(
+    90deg,
+    rgb(232, 92, 74) 0%,
+    rgb(255, 207, 112) 100%
+  );
+  --blue-gradient: linear-gradient(
+    90deg,
+    rgb(91, 145, 245) 0%,
+    rgb(160, 191, 248) 100%
+  );
+  --green-gradient: linear-gradient(
+    90deg,
+    rgb(6, 193, 103) 0%,
+    rgb(102, 209, 158) 100%
+  );
+  --purple-gradient: linear-gradient(
+    90deg,
+    rgb(115, 86, 191) 0%,
+    rgb(148, 156, 227) 100%
+  );
+  --light-shadow: rgb(117 117 117 / 25%) 0px 4px 5px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Golos Text', sans-serif;
+  color: var(--primary-color);
+}
+
+body.show-pokemon-detail {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.orange-bg {
+  background: var(--orange-gradient);
+}
+
+.green-bg {
+  background: var(--green-gradient);
+}
+
+.blue-bg {
+  background: var(--blue-gradient);
+}
+
+.purple-bg {
+  background: var(--purple-gradient);
+}
+
+.light-grey-font {
+  color: var(--light-grey);
+}
+
+.red-font {
+  color: red;
+}
+
+.green-font {
+  color: rgb(18, 151, 18);
+}
+
+.grey-font {
+  color: #555;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

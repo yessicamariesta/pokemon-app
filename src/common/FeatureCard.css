@@ -1,0 +1,45 @@
+.feature-card {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: var(--light-shadow);
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.feature-card:hover {
+  transform: scale(1.05);
+}
+
+.text-container {
+  flex: 3;
+}
+
+.text-container > p:first-child {
+  font-weight: 600;
+}
+
+.text-container > p:nth-child(2) {
+  font-size: 12px;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.icon-container > img {
+  width: 30px;
+}
+
+.icon-container > .divider {
+  width: 2px;
+  height: 80%;
+  background-color: white;
+  margin-right: 15px;
+}

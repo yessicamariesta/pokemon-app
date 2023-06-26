@@ -1,0 +1,33 @@
+.filter-box-container > .pokemon-detail-loading-container {
+  height: 400px;
+}
+
+.compare-pokemon-list-body > .pokemon-detail-loading-container {
+  height: 450px;
+  left: 0;
+  top: 0;
+}
+
+.pokemon-detail-loading-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: grid;
+  place-items: center;
+}
+
+.pokemon-detail-loading-container > img {
+  width: 60px;
+  opacity: 0.5;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
